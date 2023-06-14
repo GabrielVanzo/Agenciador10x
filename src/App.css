@@ -1,0 +1,1520 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 750px) {
+  /* Alinhamento do Componente Header */
+  .header {
+    background-color: #ffffff;
+    padding:  0px 0px;
+  }
+
+  .discountApplied {
+    background-color: #ededed;
+    margin: 0px;
+  }
+
+  .title {
+    color: black;
+    font-size: 30px;
+    margin: 50px 0px 30px;
+  }
+
+  .subtitle {
+    color: black;
+    font-size: 25px;
+    margin: 0px 0px 30px;
+  }
+
+  .subtitle2 {
+    color: black;
+    font-size: 23px;
+    margin: 0px 0px 50px;
+  }
+
+  .realPrice {
+    color: #ff6c00;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 30px;
+  }
+
+  .offerPrice {
+    font-size: 21px;
+    margin: 0px 0px 30px;
+  }
+
+  .btnHeader {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 20px;
+  }
+
+  /* Alinhamento do Componente SubHeader */
+  .containerAvails {
+    background-image: url('./images/containerAvails.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .contentAvails {
+    justify-content: center;
+    font-weight: bold;
+    width: auto;
+  }
+
+  .avail {
+    font-size: 12px;
+  }
+
+  /* Alinhamento do Componente FirstMain */
+  .firstMain {
+    background-color: black;
+    padding: 10px 0px;
+  }
+  
+  .notebookImage {
+    width: 45%;
+    height: 45%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .tourImage {
+    width: 45%;
+    height: 45%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .containerFirstMain {
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 15px;
+  }
+
+  .btnFirstMain {
+    padding: 10px;
+    width: 50%;
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  /* Alinhamento do Componente SecondMain */
+  .secondMain {
+    background-color: #ededed;
+    padding: 10px 0px;
+  }
+
+  .cardsContainer {
+    margin: 10px 50px;
+  }
+
+  .card {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+    height: 350px;
+    width: 200px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .titleCard {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .btnSecondMain {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  /* Alinhamento do Componente ForWho */
+  .forwho {
+    background-image: url('./images/forWhoBG.png');
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 0px;
+  }
+
+  .titleSecondMain {
+    color: white;
+    margin: 70px 0px 0px;
+    font-size: 28px;
+  }
+
+  .contentSecondMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  /* Alinhamento do Componente ThirdMain */
+  .thirdMain {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleThirdMain {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .titleContentThirdMain {
+    font-size: 17px;
+  }
+  .contentThirdMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    margin: 20px;
+  }
+
+  .iconsBonus {
+    display: none;
+  }
+
+  .endSection {
+    font-size: 23px;
+  }
+
+  .arrowDown {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+  }
+
+  /* Alinhamento do Componente Card */
+  .cardSession {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .especialOffer {
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+
+  .cardPrice {
+    background-color: transparent;
+    background-image: url('./images/cardBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .titleCardPrice {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+  }
+
+  .availsCardsPrice {
+    text-align: left;
+    width: 80%;
+    color: white;
+    margin: 10px 0px 0px;
+  }
+
+  .minLetter {
+    color: white;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  .btnCardPrice {
+    background-color: #12991e;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  /* Alinhamento do Componente Promisses */
+  .promissesSession {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsThirdMain {
+    width: 80%;
+    height: 10%;
+    margin-top: 20px;
+  }
+
+  /* Alinhamento do Componente Biography */
+  .biography {
+    background-color: black;
+    padding: 30px 10px;
+    /* display: flex; */
+    color: white;
+    text-align: left;
+    /* align-items: center; */
+  }
+  .titleProfile {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px;
+  }
+  .contentProfile {
+    font-size: 20px;
+  }
+  .profileImage {
+    width: 142;
+    height: 300;
+    display: block;
+    margin: 30px auto 0px;
+  }
+  .btnProfile {
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  /* Alinhamento do Componente Help */
+  .help {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnWhats {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #61ce70;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .whatsIcon {
+    margin-right: 5px;
+  }
+
+  /* Alinhamento do Componente Footer */
+  footer {
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .contentFooter {
+    font-size: 12px;
+    opacity: 60%;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    margin: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 940px) {
+  /* Alinhamento do Componente Header */
+  .header {
+    background-color: #ffffff;
+    padding:  0px 0px;
+  }
+
+  .discountApplied {
+    background-color: #ededed;
+    margin: 0px;
+  }
+
+  .title {
+    color: black;
+    font-size: 30px;
+    margin: 50px 0px 30px;
+  }
+
+  .subtitle {
+    color: black;
+    font-size: 25px;
+    margin: 0px 0px 30px;
+  }
+
+  .subtitle2 {
+    color: black;
+    font-size: 23px;
+    margin: 0px 0px 50px;
+  }
+
+  .realPrice {
+    color: #ff6c00;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 30px;
+  }
+
+  .offerPrice {
+    font-size: 21px;
+    margin: 0px 0px 30px;
+  }
+
+  .btnHeader {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 20px;
+  }
+
+  /* Alinhamento do Componente SubHeader */
+  .containerAvails {
+    background-image: url('./images/containerAvails.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    padding: 25px 10px;
+    margin: 0px;
+  }
+
+  .contentAvails {
+    justify-content: center;
+    font-weight: bold;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .avail {
+    font-size: 12px;
+  }
+
+  /* Alinhamento do Componente FirstMain */
+  .firstMain {
+    background-color: black;
+    padding: 10px 0px;
+  }
+
+  .notebookImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tourImage {
+    width: 250px;
+    height: 150px;
+  }
+
+  .containerFirstMain {
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btnFirstMain {
+    padding: 10px;
+    width: 100%;
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  /* Alinhamento do Componente SecondMain */
+  .secondMain {
+    background-color: #ededed;
+    padding: 10px 0px;
+  }
+
+  .cardsContainer {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px 50px;
+    padding: 5px;
+    height: 350px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .titleCard {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .btnSecondMain {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  /* Alinhamento do Componente ForWho */
+  .forwho {
+    background-image: url('./images/forWhoBG.png');
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 0px;
+  }
+
+  .titleSecondMain {
+    color: white;
+    margin: 70px 0px 0px;
+    font-size: 28px;
+  }
+
+  .contentSecondMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px 10px;
+  }
+
+  .icons {
+    margin-right: 60px;
+  }
+
+  /* Alinhamento do Componente ThirdMain */
+  .thirdMain {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleThirdMain {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .contentThirdMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    width: 705px;
+  }
+
+  .iconsBonus {
+    width: 25%;
+    height: 25%;
+    margin-right: 10%;
+  }
+
+  .endSection {
+    font-size: 23px;
+  }
+
+  .arrowDown {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+  }
+
+  /* Alinhamento do Componente Card */
+  .cardSession {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .especialOffer {
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+
+  .cardPrice {
+    background-color: transparent;
+    background-image: url('./images/cardBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .titleCardPrice {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+  }
+
+  .availsCardsPrice {
+    text-align: left;
+    width: 80%;
+    color: white;
+    margin: 10px 0px 0px;
+  }
+
+  .minLetter {
+    color: white;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  .btnCardPrice {
+    background-color: #12991e;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  /* Alinhamento do Componente Promisses */
+  .promissesSession {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsThirdMain {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  /* Alinhamento do Componente Biography */
+  .biography {
+    background-color: black;
+    padding: 50px 20px;
+    display: flex;
+    color: white;
+    text-align: left;
+    align-items: center;
+  }
+  .containerProfile {
+    display: flex;
+    flex-direction: column;
+  }
+  .titleProfile {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px;
+  }
+  .contentProfile {
+    font-size: 20px;
+  }
+  .profileImage {
+    width: 60%;
+    height: 60%;
+  }
+  .btnProfile {
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  /* Alinhamento do Componente Help */
+  .help {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnWhats {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #61ce70;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .whatsIcon {
+    margin-right: 5px;
+  }
+
+  /* Alinhamento do Componente Footer */
+  footer {
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .contentFooter {
+    font-size: 12px;
+    opacity: 60%;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    margin: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 941px) and (max-width: 1450px){  
+  /* Alinhamento do Componente Header */
+  .header {
+    background-color: #ffffff;
+    padding:  0px 0px;
+  }
+
+  .discountApplied {
+    background-color: #ededed;
+    margin: 0px;
+  }
+
+  .title {
+    color: black;
+    font-size: 30px;
+    margin: 50px 0px 30px;
+  }
+
+  .subtitle {
+    color: black;
+    font-size: 25px;
+    margin: 0px 0px 30px;
+  }
+
+  .subtitle2 {
+    color: black;
+    font-size: 23px;
+    margin: 0px 0px 50px;
+  }
+
+  .realPrice {
+    color: #ff6c00;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 30px;
+  }
+
+  .offerPrice {
+    font-size: 21px;
+    margin: 0px 0px 30px;
+  }
+
+  .btnHeader {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 20px;
+  }
+
+  /* Alinhamento do Componente SubHeader */
+  .containerAvails {
+    background-image: url('./images/containerAvails.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    padding: 45px 10px;
+    margin: 0px;
+  }
+
+  .contentAvails {
+    justify-content: center;
+    font-weight: bold;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .avail {
+    font-size: 15px;
+  }
+
+  /* Alinhamento do Componente FirstMain */
+  .firstMain {
+    background-color: black;
+    padding: 10px 0px;
+  }
+
+  .notebookImage {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
+  }
+
+  .tourImage {
+    width: 250px;
+    height: 150px;
+    margin-left: 100px;
+  }
+
+  .containerFirstMain {
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnFirstMain {
+    padding: 10px;
+    width: 100%;
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  /* Alinhamento do Componente SecondMain */
+  .secondMain {
+    background-color: #ededed;
+    padding: 10px 0px;
+  }
+
+  .cardsContainer {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px 50px;
+    padding: 5px;
+    height: 450px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .titleCard {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .btnSecondMain {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  /* Alinhamento do Componente ForWho */
+  .forwho {
+    background-image: url('./images/forWhoBG.png');
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px;
+  }
+
+  .titleSecondMain {
+    color: white;
+    margin: 50px 0px 50px;
+    font-size: 32px;
+  }
+
+  .contentSecondMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px 10px;
+  }
+
+  .icons {
+    width: 7%;
+    height: 7%;
+    margin-right: 60px;
+  }
+
+  /* Alinhamento do Componente ThirdMain */
+  .thirdMain {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleThirdMain {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .contentThirdMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    width: 705px;
+  }
+
+  .iconsBonus {
+    width: 25%;
+    height: 25%;
+    margin-right: 10%;
+  }
+
+  .endSection {
+    font-size: 23px;
+  }
+
+  .arrowDown {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+  }
+
+  /* Alinhamento do Componente Card */
+  .cardSession {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .especialOffer {
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+
+  .cardPrice {
+    background-color: transparent;
+    background-image: url('./images/cardBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .titleCardPrice {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+  }
+
+  .availsCardsPrice {
+    text-align: left;
+    width: 80%;
+    color: white;
+    margin: 10px 0px 0px;
+  }
+
+  .minLetter {
+    color: white;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  .btnCardPrice {
+    background-color: #12991e;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  /* Alinhamento do Componente Promisses */
+  .promissesSession {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsThirdMain {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  /* Alinhamento do Componente Biography */
+  .biography {
+    background-color: black;
+    padding: 50px 20px;
+    display: flex;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerProfile {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+  .titleProfile {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px;
+  }
+  .contentProfile {
+    font-size: 20px;
+  }
+  .profileImage {
+    width: 300px;
+    height: 600px;
+  }
+  .btnProfile {
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  /* Alinhamento do Componente Help */
+  .help {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnWhats {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #61ce70;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .whatsIcon {
+    margin-right: 5px;
+  }
+
+  /* Alinhamento do Componente Footer */
+  footer {
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .contentFooter {
+    font-size: 12px;
+    opacity: 60%;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    margin: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1451px) {
+  /* Alinhamento do Componente Header */
+  .header {
+    background-color: #ffffff;
+    padding:  0px 0px;
+  }
+
+  .discountApplied {
+    background-color: #ededed;
+    margin: 0px;
+  }
+
+  .title {
+    color: black;
+    font-size: 30px;
+    margin: 50px 0px 30px;
+  }
+
+  .subtitle {
+    color: black;
+    font-size: 25px;
+    margin: 0px 0px 30px;
+  }
+
+  .subtitle2 {
+    color: black;
+    font-size: 23px;
+    margin: 0px 0px 50px;
+  }
+
+  .realPrice {
+    color: #ff6c00;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 30px;
+  }
+
+  .offerPrice {
+    font-size: 21px;
+    margin: 0px 0px 30px;
+  }
+
+  .btnHeader {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px 20px;
+  }
+
+  /* Alinhamento do Componente SubHeader */
+  .containerAvails {
+    background-image: url('./images/containerAvails.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    padding: 60px 10px;
+    margin: 0px;
+  }
+
+  .contentAvails {
+    justify-content: center;
+    font-weight: bold;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .avail {
+    font-size: 17px;
+  }
+
+  /* Alinhamento do Componente FirstMain */
+  .firstMain {
+    background-color: black;
+    padding: 10px 0px;
+  }
+
+  .notebookImage {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
+  }
+
+  .tourImage {
+    width: 250px;
+    height: 150px;
+    margin-left: 100px;
+  }
+
+  .containerFirstMain {
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnFirstMain {
+    padding: 10px;
+    width: 100%;
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  /* Alinhamento do Componente SecondMain */
+  .secondMain {
+    background-color: #ededed;
+    padding: 10px 0px;
+  }
+
+  .cardsContainer {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px 50px;
+    padding: 5px;
+    height: 550px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btnSecondMain {
+    background-color: #12991e;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  /* Alinhamento do Componente ForWho */
+  .forwho {
+    background-image: url('./images/forWhoBG.png');
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 180px 0px;
+  }
+
+  .titleSecondMain {
+    color: white;
+    margin: 0px 0px 50px;
+    font-size: 32px;
+  }
+
+  .contentSecondMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px 10px;
+  }
+
+  .icons {
+    width: 7%;
+    height: 7%;
+    margin-right: 60px;
+  }
+
+  /* Alinhamento do Componente ThirdMain */
+  .thirdMain {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleThirdMain {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .contentThirdMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    width: 705px;
+  }
+
+  .iconsBonus {
+    width: 25%;
+    height: 25%;
+    margin-right: 10%;
+  }
+
+  .endSection {
+    font-size: 23px;
+  }
+
+  .arrowDown {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+  }
+
+  /* Alinhamento do Componente Card */
+  .cardSession {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .especialOffer {
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+
+  .cardPrice {
+    background-color: transparent;
+    background-image: url('./images/cardBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .titleCardPrice {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+  }
+
+  .availsCardsPrice {
+    text-align: left;
+    width: 80%;
+    color: white;
+    margin: 10px 0px 0px;
+  }
+
+  .minLetter {
+    color: white;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  .btnCardPrice {
+    background-color: #12991e;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  /* Alinhamento do Componente Promisses */
+  .promissesSession {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsThirdMain {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  /* Alinhamento do Componente Biography */
+  .biography {
+    background-color: black;
+    padding: 50px 20px;
+    display: flex;
+    color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerProfile {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+  .titleProfile {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px;
+  }
+  .contentProfile {
+    font-size: 20px;
+  }
+  .profileImage {
+    width: 300px;
+    height: 600px;
+  }
+  .btnProfile {
+    background-color: #ff6c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  /* Alinhamento do Componente Help */
+  .help {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnWhats {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #61ce70;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .whatsIcon {
+    margin-right: 5px;
+  }
+
+  /* Alinhamento do Componente Footer */
+  footer {
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .contentFooter {
+    font-size: 12px;
+    opacity: 60%;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    margin: 0px 15px;
+  }
+}

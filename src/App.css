@@ -109,14 +109,15 @@ a {
 
   .containerFirstMain {
     color: white;
-    text-align: center;
+    text-align: left;
     padding-bottom: 30px;
-    margin: 15px;
+    margin: 15px auto;
+    width: 80%;
   }
 
   .btnFirstMain {
     padding: 10px;
-    width: 50%;
+    width: 100%;
     background-color: #ff6c00;
     color: white;
     font-weight: bold;
@@ -177,21 +178,24 @@ a {
 
   .titleSecondMain {
     color: white;
-    margin: 70px 0px 0px;
+    margin: 70px 0px 50px;
     font-size: 28px;
   }
 
   .contentSecondMain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: left;
     color: white;
-    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
   }
 
   .icons {
-    display: none;
+    display: block;
+    margin: 0px auto;
+    width: 15%;
+    height: 15%;
   }
 
   /* Alinhamento do Componente ThirdMain */
@@ -210,16 +214,16 @@ a {
     font-size: 17px;
   }
   .contentThirdMain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: left;
     color: black;
     margin: 20px;
   }
 
   .iconsBonus {
-    display: none;
+    display: block;
+    margin: 0px auto;
+    width: 15%;
+    height: 15%;
   }
 
   .endSection {
@@ -1350,6 +1354,7 @@ a {
     width: 25%;
     height: 25%;
     margin-right: 10%;
+    background-color: #ededed;
   }
 
   .endSection {

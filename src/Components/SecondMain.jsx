@@ -2,6 +2,10 @@ import video1 from '../video/video1.mp4';
 import video2 from '../video/video2.mp4';
 
 const SecondMain = () => {
+  const handleClick = () => {
+    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
+  }
+
   return (
     <section className='secondMain'>
       <h1 className='titleCardsMain'>
@@ -20,7 +24,10 @@ const SecondMain = () => {
         </div>
       </section>
       <p><b>Poderia ser você, mas você não acredita</b></p>
-      <button className='btnSecondMain'>
+      <button
+        className='btnSecondMain'
+        onClick={ handleClick }  
+      >
         QUERO SER O PRÓXIMO A MANDAR DEPOIMENTO
       </button>
     </section>

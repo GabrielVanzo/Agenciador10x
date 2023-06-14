@@ -2,6 +2,10 @@ import notebookImage from '../images/notebookImage.png'
 import tourImage from '../images/firstMainImage.png'
 
 const FirstMain = () => {
+  const handleClick = () => {
+    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
+  }
+
   return (
     <section className="firstMain">
       <div className='containerFirstMain'>
@@ -24,9 +28,11 @@ const FirstMain = () => {
           É como dizem "Quem chega cedo bebe água limpa". <br />
           Aproveite agora antes que seja tarde demais! <br />
           <br />
-          <button className='btnFirstMain'>
-            CLIQUE PARA GARANTIR SUA VAGA <br />
-            COM VALOR EXCLUSIVO
+          <button
+            className='btnFirstMain'
+            onClick={ handleClick }
+          >
+            CLIQUE PARA GARANTIR SUA VAGA COM VALOR EXCLUSIVO
           </button>
         </p>
       </div>

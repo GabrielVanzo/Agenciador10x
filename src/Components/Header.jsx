@@ -1,4 +1,8 @@
 const Header = () => {
+  const handleClick = () => {
+    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
+  }
+  
   return (
     <section className='header'>
       <p className='discountApplied'>✅ Cupom de desconto aplicado com sucesso</p>
@@ -16,10 +20,7 @@ const Header = () => {
       <p className='offerPrice  '>🔥 Por apenas 10x <b>R$ 5,50</b></p>
       <button
         className='btnHeader'
-        onClick={() => {
-          let target = document.getElementById('titlePrices')
-          target.scrollIntoView({ behavior: 'smooth' })
-        }}
+        onClick={ handleClick }
       >
         CLIQUE PARA GARANTIR SUA VAGA COM VALOR EXCLUSIVO
       </button>

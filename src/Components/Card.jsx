@@ -1,6 +1,10 @@
 import checkIcon from '../images/checkIcon.png';
 
 const Card = () => {
+  const handleClick = () => {
+    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
+  }
+
   return (
     <section className='cardSession'>
       <p className='especialOffer'>🔥 Oferta <b><u>especial</u></b></p>
@@ -23,9 +27,11 @@ const Card = () => {
         <h1 className='titleCardPrice'>Por <b>10x R$ 5,50</b></h1>
         <p className='minLetter'>Menos que uma <b>pizza.</b></p>
         <p className='minLetter'>A diferença é que nós engordamos apenas o seu bolso.</p>
-        <button className='btnCardPrice'>
-          QUERO ENTRAR PRO CLUBE MILHAS COM <br />
-          DESCONTO 2023
+        <button
+          className='btnCardPrice'
+          onClick={ handleClick }  
+        >
+          QUERO ENTRAR PARA O AGENCIADOR 10X COM DESCONTO 2023
         </button>
       </div>
     </section>

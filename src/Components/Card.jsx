@@ -1,10 +1,7 @@
 import checkIcon from '../images/checkIcon.png';
+import handleClick from "../utils/function";
 
 const Card = () => {
-  const handleClick = () => {
-    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
-  }
-
   return (
     <section className='cardSession'>
       <p className='especialOffer'>🔥 Oferta <b><u>especial</u></b></p>

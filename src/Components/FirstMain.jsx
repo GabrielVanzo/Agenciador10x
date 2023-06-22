@@ -1,11 +1,8 @@
-import notebookImage from '../images/notebookImage.png'
-import tourImage from '../images/firstMainImage.png'
+import notebookImage from '../images/notebookImage.png';
+import tourImage from '../images/firstMainImage.png';
+import handleClick from "../utils/function";
 
 const FirstMain = () => {
-  const handleClick = () => {
-    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
-  }
-
   return (
     <section className="firstMain">
       <div className='containerFirstMain'>

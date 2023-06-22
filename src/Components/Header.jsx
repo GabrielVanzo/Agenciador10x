@@ -1,8 +1,6 @@
-const Header = () => {
-  const handleClick = () => {
-    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
-  }
-  
+import handleClick from "../utils/function";
+
+const Header = () => {  
   return (
     <section className='header'>
       <p className='discountApplied'>✅ Cupom de desconto aplicado com sucesso</p>

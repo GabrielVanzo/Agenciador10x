@@ -1,11 +1,8 @@
 import video1 from '../video/video1.mp4';
 import video2 from '../video/video2.mp4';
+import handleClick from "../utils/function";
 
 const SecondMain = () => {
-  const handleClick = () => {
-    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
-  }
-
   return (
     <section className='secondMain'>
       <h1 className='titleCardsMain'>

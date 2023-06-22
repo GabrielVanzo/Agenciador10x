@@ -1,10 +1,7 @@
-import profileImage from '../images/profileImage.png'
+import profileImage from '../images/profileImage.png';
+import handleClick from "../utils/function";
 
 const Biography = () => {
-  const handleClick = () => {
-    window.location.assign("https://pay.kiwify.com.br/LY3fxNy")
-  }
-
   return (
     <section className="biography">
       <div className='containerProfile'>

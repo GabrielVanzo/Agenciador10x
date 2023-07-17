@@ -15,7 +15,7 @@ const Header = () => {
         e consquistando a sua tão sonhada liberdade!
       </p>
       <p className='realPrice'>De <s>R$ 997</s></p>
-      <p className='offerPrice  '>🔥 Por apenas 10x <b>R$ 5,50</b></p>
+      <p className='offerPrice  '>🔥 Por apenas 10x <b>R$ 5,51</b></p>
       <button
         className='btnHeader'
         onClick={ handleClick }

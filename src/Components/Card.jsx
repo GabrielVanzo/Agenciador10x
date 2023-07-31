@@ -21,9 +21,7 @@ const Card = () => {
           <img src={checkIcon} alt="check" /> Bônus 3: Mentoria e Resolução de Conflito
           <hr />
         </p>
-        <h1 className='titleCardPrice'>Por <b>10x R$ 5,51</b></h1>
-        <p className='minLetter'>Menos que uma <b>pizza.</b></p>
-        <p className='minLetter'>A diferença é que nós engordamos apenas o seu bolso.</p>
+        <h1 className='titleCardPrice'>Por <b>12x R$ 99,70</b></h1>
         <button
           className='btnCardPrice'
           onClick={ handleClick }  

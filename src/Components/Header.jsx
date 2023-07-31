@@ -14,8 +14,9 @@ const Header = () => {
         Com baixo investimento e risco zero, saindo na frente de 99% dos brasileiros <br />
         e consquistando a sua tão sonhada liberdade!
       </p>
-      <p className='realPrice'>De <s>R$ 997</s></p>
-      <p className='offerPrice  '>🔥 Por apenas 10x <b>R$ 5,51</b></p>
+      <p className='realPrice'>R$ 997 à vista</p>
+      <p>ou</p>
+      <p className='offerPrice  '>🔥 Por apenas 12x <b>R$ 99,70</b></p>
       <button
         className='btnHeader'
         onClick={ handleClick }

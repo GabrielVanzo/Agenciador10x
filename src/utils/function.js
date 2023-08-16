@@ -1,5 +1,5 @@
 const handleClick = () => {
-  window.location.assign("https://chk.eduzz.com/1441917")
+  window.location.assign("hhttps://pay.kiwify.com.br/JHt1iIh")
 }
 
 export default handleClick

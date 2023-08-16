@@ -26,7 +26,7 @@ const Card = () => {
           className='btnCardPrice'
           onClick={ handleClick }  
         >
-          QUERO ENTRAR PARA O AGENCIADOR 10X COM DESCONTO 2023
+          QUERO ENTRAR PARA O AGENCIADOR 10X 2023
         </button>
       </div>
     </section>
